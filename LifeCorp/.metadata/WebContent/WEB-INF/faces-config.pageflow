@@ -1,2 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pageflow:Pageflow xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf14357745137520" configfile="/LifeCorp/WebContent/WEB-INF/faces-config.xml"/>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf14357745137520" configfile="/LifeCorp/WebContent/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="newOrder.xhtml" x="768" y="348" id="pf14357855592220" path="/newOrder.xhtml"/>
+</pageflow:Pageflow>

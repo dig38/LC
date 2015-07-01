@@ -38,10 +38,11 @@ public class ProductList extends HttpServlet {
 		List<Product> proList = productMC.getAllProducts();
 		request.setAttribute("proList", proList);
 		
+		//Prints a list of our product's names to the console.
 		for (Product iterater : proList){
 			System.out.println(iterater.getProductName());
 		}
-		//getServletContext().getRequestDispatcher("/newOrder.jsp").forward(request, response);
+		getServletContext().getRequestDispatcher("newOrder.xhtml").forward(request, response);
 	}
 
 }
