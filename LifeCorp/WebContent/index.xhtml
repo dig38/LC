@@ -9,7 +9,41 @@
 <ui:composition template="/templates/StandardTemplate.xhtml">
 
 	<ui:define name="content">
-	    <a href="ProductList" class="btn btn-primary">New Order</a>
+	
+	
+	<div class="jumbotron">
+		<div class="container">
+			<h1>Place an Order here with LifeCorp!</h1>
+			<p>This is the inventory list page for making a new order.</p>
+			<p><a class="btn btn-primary btn-lg" href="ProductList" role="button">New Order &raquo;</a></p>
+		</div>
+	</div>
+
+	<div class="container">
+		<!-- Example row of columns -->
+		<div class="row">
+			
+			<div class="col-md-6">
+				<h2>New Customers Here: </h2>
+				<p>Please register here! An account is required before orders may be placed.</p>
+				<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+			</div>
+			<div class="col-md-6">
+				<h2>Returning Customers: </h2>
+				<p>Click here to view your order history. </p>
+				<p><a class="btn btn-default" href="#" role="button">Order History&raquo;</a></p>
+			</div>
+		</div>
+		<hr />    
+		<div id="footer">
+			<ui:insert name="footer">
+				<ui:include src="/templates/footer.xhtml"/>
+			</ui:insert>
+		</div>
+    </div> <!-- /container -->
+	</ui:define>
+	<!-- Overrides the default footer. This alows the above insert to correctly place the footer inorder to work with bootstrap, stoping the footer from being duplicated.-->
+	<ui:define name="footer">
 	</ui:define>
 	
 </ui:composition>
