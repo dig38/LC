@@ -43,6 +43,7 @@ public class ProductList extends HttpServlet {
 			System.out.println(iterater.getProductName());
 		}
 		getServletContext().getRequestDispatcher("newOrder.xhtml").forward(request, response);
+		//response.sendRedirect("newOrder.xhtml");
 	}
 
 }
